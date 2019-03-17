@@ -13,3 +13,4 @@ numpy
 pyelftools
 fuzzywuzzy
 jsonschema
+pyyaml==4.2b4

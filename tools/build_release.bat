@@ -26,7 +26,9 @@ cd %~dp0..\
 		set UV4=c:\keil\uv4\uv4.exe
 	) else if EXIST c:\keil_v5\uv4\uv4.exe (
 		set UV4=c:\keil_v5\uv4\uv4.exe
-	) else goto error_nomdk
+	)  else if EXIST D:\MDK\Keil_v5.26\UV4\uv4.exe (
+		set UV4=D:\MDK\Keil_v5.26\UV4\uv4.exe
+	)else goto error_nomdk
 )
 @echo USING UV4=%UV4%
 
